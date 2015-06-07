@@ -14,6 +14,9 @@
 		B5A0013D1B246A0600431A18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A0013C1B246A0600431A18 /* Images.xcassets */; };
 		B5A001401B246A0600431A18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A0013E1B246A0600431A18 /* LaunchScreen.xib */; };
 		B5A0014C1B246A0600431A18 /* WeatherViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0014B1B246A0600431A18 /* WeatherViewerTests.m */; };
+		B5A001591B246A3900431A18 /* WeatherLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001561B246A3900431A18 /* WeatherLayer.m */; };
+		B5A0015A1B246A3900431A18 /* WeatherOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */; };
+		B5A0015F1B246AE000431A18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0015E1B246AE000431A18 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		B5A001451B246A0600431A18 /* WeatherViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A0014A1B246A0600431A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A0014B1B246A0600431A18 /* WeatherViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewerTests.m; sourceTree = "<group>"; };
+		B5A001551B246A3900431A18 /* WeatherLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLayer.h; sourceTree = "<group>"; };
+		B5A001561B246A3900431A18 /* WeatherLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLayer.m; sourceTree = "<group>"; };
+		B5A001571B246A3900431A18 /* WeatherOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherOverlayRenderer.h; sourceTree = "<group>"; };
+		B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherOverlayRenderer.m; sourceTree = "<group>"; };
+		B5A0015E1B246AE000431A18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A0015F1B246AE000431A18 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +92,16 @@
 			children = (
 				B5A001331B246A0600431A18 /* AppDelegate.h */,
 				B5A001341B246A0600431A18 /* AppDelegate.m */,
+				B5A001551B246A3900431A18 /* WeatherLayer.h */,
+				B5A001561B246A3900431A18 /* WeatherLayer.m */,
+				B5A001571B246A3900431A18 /* WeatherOverlayRenderer.h */,
+				B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */,
 				B5A001361B246A0600431A18 /* ViewController.h */,
 				B5A001371B246A0600431A18 /* ViewController.m */,
 				B5A001391B246A0600431A18 /* Main.storyboard */,
 				B5A0013C1B246A0600431A18 /* Images.xcassets */,
 				B5A0013E1B246A0600431A18 /* LaunchScreen.xib */,
+				B5A0015D1B246AD000431A18 /* Frameworks */,
 				B5A0012F1B246A0600431A18 /* Supporting Files */,
 			);
 			path = WeatherViewer;
@@ -117,6 +131,14 @@
 				B5A0014A1B246A0600431A18 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5A0015D1B246AD000431A18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5A0015E1B246AE000431A18 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +243,8 @@
 			files = (
 				B5A001381B246A0600431A18 /* ViewController.m in Sources */,
 				B5A001351B246A0600431A18 /* AppDelegate.m in Sources */,
+				B5A001591B246A3900431A18 /* WeatherLayer.m in Sources */,
+				B5A0015A1B246A3900431A18 /* WeatherOverlayRenderer.m in Sources */,
 				B5A001321B246A0600431A18 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
