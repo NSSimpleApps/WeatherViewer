@@ -17,6 +17,7 @@
 		B5A001591B246A3900431A18 /* WeatherLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001561B246A3900431A18 /* WeatherLayer.m */; };
 		B5A0015A1B246A3900431A18 /* WeatherOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */; };
 		B5A0015F1B246AE000431A18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0015E1B246AE000431A18 /* MapKit.framework */; };
+		B5A001611B2471B200431A18 /* WeatherViewer.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5A001601B2471B100431A18 /* WeatherViewer.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B5A001571B246A3900431A18 /* WeatherOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherOverlayRenderer.h; sourceTree = "<group>"; };
 		B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherOverlayRenderer.m; sourceTree = "<group>"; };
 		B5A0015E1B246AE000431A18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B5A001601B2471B100431A18 /* WeatherViewer.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WeatherViewer.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */,
 				B5A001361B246A0600431A18 /* ViewController.h */,
 				B5A001371B246A0600431A18 /* ViewController.m */,
+				B5A001601B2471B100431A18 /* WeatherViewer.gif */,
 				B5A001391B246A0600431A18 /* Main.storyboard */,
 				B5A0013C1B246A0600431A18 /* Images.xcassets */,
 				B5A0013E1B246A0600431A18 /* LaunchScreen.xib */,
@@ -224,6 +227,7 @@
 				B5A0013B1B246A0600431A18 /* Main.storyboard in Resources */,
 				B5A001401B246A0600431A18 /* LaunchScreen.xib in Resources */,
 				B5A0013D1B246A0600431A18 /* Images.xcassets in Resources */,
+				B5A001611B2471B200431A18 /* WeatherViewer.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
