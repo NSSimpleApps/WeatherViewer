@@ -1,7 +1,8 @@
 # WeatherViewer
 A simple weather viewer.
 
-THIS APPLICATION NOT WORKING NOW BECAUSE GOOGLE SERVICE FOR WEATHER HAS BEEN REMOVED.
+THIS APPLICATION NOT WORKING NOW BECAUSE WEATHER GOOGLE SERVICE HAS BEEN REMOVED.
+Maybe it will be fixed in future.
 
 Я сначала использовал данные с сайта `http://openweathermap.org`.
 
