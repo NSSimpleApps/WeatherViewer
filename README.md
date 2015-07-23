@@ -1,6 +1,8 @@
 # WeatherViewer
 A simple weather viewer.
 
+THIS APPLICATION NOT WORKING NOW BECAUSE GOOGLE SERVICE FOR WEATHER HAS BEEN REMOVED.
+
 Я сначала использовал данные с сайта `http://openweathermap.org`.
 
 Переписал библиотеку `OpenWeatherMapAPI`, потому что она использовала старую версию `AFNetworking`.
