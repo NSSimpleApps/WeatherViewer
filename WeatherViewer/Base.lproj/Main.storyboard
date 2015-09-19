@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M5G-VN-p4d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M5G-VN-p4d">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -26,10 +26,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ub-nx-Hb3" secondAttribute="bottom" id="2la-Gc-gMQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="5ub-nx-Hb3" secondAttribute="trailing" constant="-16" id="2rR-sp-ZmQ"/>
-                            <constraint firstItem="5ub-nx-Hb3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="LLc-0A-9mS"/>
-                            <constraint firstItem="5ub-nx-Hb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="qyx-pM-XQ4"/>
+                            <constraint firstItem="5ub-nx-Hb3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CCu-gg-f9l"/>
+                            <constraint firstItem="5ub-nx-Hb3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="MkK-zM-eBh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5ub-nx-Hb3" secondAttribute="trailing" constant="-20" id="NUo-dQ-FJ5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5ub-nx-Hb3" secondAttribute="bottom" id="hVc-me-55y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Weather" id="D9c-Gh-3hb"/>

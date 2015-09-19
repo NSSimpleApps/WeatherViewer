@@ -91,6 +91,29 @@
     NSInteger scale = [[UIScreen mainScreen] scale];
     
     NSURL *imageURL = [self imageURLForTileX:tilex tileY:tiley zoomLevel:zoomLevel scale:scale];
+    NSLog(@"%@", imageURL);
+    /*NSURLRequest *request = [[NSURLRequest alloc] initWithURL:imageURL];
+    
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               
+                               UIImage *image = [[UIImage alloc] initWithData:data];
+                               
+                               if (image) {
+                                   
+                                   CGRect contentsRect = [self contentsRectForImage:image mercatorPoint:mercatorPoint tileX:tilex tileY:tiley zoomLevel:zoomLevel];
+                                   
+                                   CGImageRef croppedImage = CGImageCreateWithImageInRect(image.CGImage, contentsRect);
+                                   
+                                   CGRect rect = [self rectForMapRect:mapRect];
+                                   CGContextTranslateCTM(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
+                                   CGContextScaleCTM(context, 1.f/zoomScale, 1.f/zoomScale);
+                                   CGContextTranslateCTM(context, 0.f, image.size.height/scale);
+                                   CGContextScaleCTM(context, 1.f, -1.f);
+                                   CGContextDrawImage(context, CGRectMake(0.f, 0.f, image.size.width/scale, image.size.height/scale), croppedImage);
+                               }
+                           }];*/
     
     UIImage *image = [[UIImage alloc] initWithData:[NSData dataWithContentsOfURL:imageURL]];
 

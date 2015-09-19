@@ -7,30 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B573F8381B2757B70000B708 /* WeatherOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = B573F8371B2757B70000B708 /* WeatherOverlay.m */; };
 		B5A001321B246A0600431A18 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001311B246A0600431A18 /* main.m */; };
 		B5A001351B246A0600431A18 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001341B246A0600431A18 /* AppDelegate.m */; };
 		B5A001381B246A0600431A18 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001371B246A0600431A18 /* ViewController.m */; };
 		B5A0013B1B246A0600431A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A001391B246A0600431A18 /* Main.storyboard */; };
 		B5A0013D1B246A0600431A18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A0013C1B246A0600431A18 /* Images.xcassets */; };
 		B5A001401B246A0600431A18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A0013E1B246A0600431A18 /* LaunchScreen.xib */; };
-		B5A0014C1B246A0600431A18 /* WeatherViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A0014B1B246A0600431A18 /* WeatherViewerTests.m */; };
-		B5A001591B246A3900431A18 /* WeatherLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001561B246A3900431A18 /* WeatherLayer.m */; };
 		B5A0015A1B246A3900431A18 /* WeatherOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */; };
 		B5A0015F1B246AE000431A18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0015E1B246AE000431A18 /* MapKit.framework */; };
 		B5A001611B2471B200431A18 /* WeatherViewer.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5A001601B2471B100431A18 /* WeatherViewer.gif */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B5A001461B246A0600431A18 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5A001241B246A0600431A18 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5A0012B1B246A0600431A18;
-			remoteInfo = WeatherViewer;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		B573F8361B2757B70000B708 /* WeatherOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherOverlay.h; sourceTree = "<group>"; };
+		B573F8371B2757B70000B708 /* WeatherOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherOverlay.m; sourceTree = "<group>"; };
 		B5A0012C1B246A0600431A18 /* WeatherViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A001301B246A0600431A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A001311B246A0600431A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,11 +32,6 @@
 		B5A0013A1B246A0600431A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5A0013C1B246A0600431A18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5A0013F1B246A0600431A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B5A001451B246A0600431A18 /* WeatherViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5A0014A1B246A0600431A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5A0014B1B246A0600431A18 /* WeatherViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherViewerTests.m; sourceTree = "<group>"; };
-		B5A001551B246A3900431A18 /* WeatherLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherLayer.h; sourceTree = "<group>"; };
-		B5A001561B246A3900431A18 /* WeatherLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherLayer.m; sourceTree = "<group>"; };
 		B5A001571B246A3900431A18 /* WeatherOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherOverlayRenderer.h; sourceTree = "<group>"; };
 		B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherOverlayRenderer.m; sourceTree = "<group>"; };
 		B5A0015E1B246AE000431A18 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -61,13 +47,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5A001421B246A0600431A18 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				B5A0012E1B246A0600431A18 /* WeatherViewer */,
-				B5A001481B246A0600431A18 /* WeatherViewerTests */,
 				B5A0012D1B246A0600431A18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				B5A0012C1B246A0600431A18 /* WeatherViewer.app */,
-				B5A001451B246A0600431A18 /* WeatherViewerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,8 +71,8 @@
 			children = (
 				B5A001331B246A0600431A18 /* AppDelegate.h */,
 				B5A001341B246A0600431A18 /* AppDelegate.m */,
-				B5A001551B246A3900431A18 /* WeatherLayer.h */,
-				B5A001561B246A3900431A18 /* WeatherLayer.m */,
+				B573F8361B2757B70000B708 /* WeatherOverlay.h */,
+				B573F8371B2757B70000B708 /* WeatherOverlay.m */,
 				B5A001571B246A3900431A18 /* WeatherOverlayRenderer.h */,
 				B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */,
 				B5A001361B246A0600431A18 /* ViewController.h */,
@@ -115,23 +92,6 @@
 			children = (
 				B5A001301B246A0600431A18 /* Info.plist */,
 				B5A001311B246A0600431A18 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B5A001481B246A0600431A18 /* WeatherViewerTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5A0014B1B246A0600431A18 /* WeatherViewerTests.m */,
-				B5A001491B246A0600431A18 /* Supporting Files */,
-			);
-			path = WeatherViewerTests;
-			sourceTree = "<group>";
-		};
-		B5A001491B246A0600431A18 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5A0014A1B246A0600431A18 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,39 +124,17 @@
 			productReference = B5A0012C1B246A0600431A18 /* WeatherViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5A001441B246A0600431A18 /* WeatherViewerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5A001521B246A0600431A18 /* Build configuration list for PBXNativeTarget "WeatherViewerTests" */;
-			buildPhases = (
-				B5A001411B246A0600431A18 /* Sources */,
-				B5A001421B246A0600431A18 /* Frameworks */,
-				B5A001431B246A0600431A18 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5A001471B246A0600431A18 /* PBXTargetDependency */,
-			);
-			name = WeatherViewerTests;
-			productName = WeatherViewerTests;
-			productReference = B5A001451B246A0600431A18 /* WeatherViewerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B5A001241B246A0600431A18 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = NSSimpleApps;
 				TargetAttributes = {
 					B5A0012B1B246A0600431A18 = {
 						CreatedOnToolsVersion = 6.3.2;
-					};
-					B5A001441B246A0600431A18 = {
-						CreatedOnToolsVersion = 6.3.2;
-						TestTargetID = B5A0012B1B246A0600431A18;
 					};
 				};
 			};
@@ -214,7 +152,6 @@
 			projectRoot = "";
 			targets = (
 				B5A0012B1B246A0600431A18 /* WeatherViewer */,
-				B5A001441B246A0600431A18 /* WeatherViewerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,13 +168,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5A001431B246A0600431A18 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,29 +177,13 @@
 			files = (
 				B5A001381B246A0600431A18 /* ViewController.m in Sources */,
 				B5A001351B246A0600431A18 /* AppDelegate.m in Sources */,
-				B5A001591B246A3900431A18 /* WeatherLayer.m in Sources */,
+				B573F8381B2757B70000B708 /* WeatherOverlay.m in Sources */,
 				B5A0015A1B246A3900431A18 /* WeatherOverlayRenderer.m in Sources */,
 				B5A001321B246A0600431A18 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5A001411B246A0600431A18 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5A0014C1B246A0600431A18 /* WeatherViewerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5A001471B246A0600431A18 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5A0012B1B246A0600431A18 /* WeatherViewer */;
-			targetProxy = B5A001461B246A0600431A18 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5A001391B246A0600431A18 /* Main.storyboard */ = {
@@ -312,6 +226,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -327,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -365,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -379,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeatherViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -389,41 +305,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WeatherViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B5A001531B246A0600431A18 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WeatherViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherViewer.app/WeatherViewer";
-			};
-			name = Debug;
-		};
-		B5A001541B246A0600431A18 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = WeatherViewerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherViewer.app/WeatherViewer";
 			};
 			name = Release;
 		};
@@ -446,14 +329,7 @@
 				B5A001511B246A0600431A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		B5A001521B246A0600431A18 /* Build configuration list for PBXNativeTarget "WeatherViewerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5A001531B246A0600431A18 /* Debug */,
-				B5A001541B246A0600431A18 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

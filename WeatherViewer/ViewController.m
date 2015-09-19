@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "WeatherLayer.h"
+#import "WeatherOverlay.h"
 #import "WeatherOverlayRenderer.h"
 @import MapKit;
 
@@ -17,7 +17,7 @@
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
-@property (strong, nonatomic) WeatherLayer *weatherLayer;
+@property (strong, nonatomic) WeatherOverlay *weatherOverlay;
 
 @end
 
@@ -27,9 +27,9 @@
     
     [super viewDidLoad];
     
-    self.weatherLayer = [[WeatherLayer alloc] init];
+    self.weatherOverlay = [[WeatherOverlay alloc] init];
     
-    [self.mapView addOverlay:self.weatherLayer];
+    [self.mapView addOverlay:self.weatherOverlay];
     
     if ([CLLocationManager locationServicesEnabled]) {
         
@@ -60,7 +60,6 @@
     CLLocation *location = [locations lastObject];
     
     [self.mapView setRegion:MKCoordinateRegionMake(CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), MKCoordinateSpanMake(10, 10))];
-    
     [manager stopUpdatingLocation];
     manager.delegate = nil;
     self.locationManager = nil;
@@ -69,8 +68,10 @@
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     
     NSLog(@"%@", error);
+    
     [manager stopUpdatingLocation];
     manager.delegate = nil;
+    
     self.locationManager = nil;
 }
 
@@ -78,7 +79,7 @@
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id <MKOverlay>)overlay {
     
-    if ([overlay isEqual:self.weatherLayer]) {
+    if ([overlay isEqual:self.weatherOverlay]) {
         
         WeatherOverlayRenderer *renderer = [[WeatherOverlayRenderer alloc] initWithOverlay:overlay];
         return renderer;
