@@ -16,12 +16,12 @@
 		B5A001401B246A0600431A18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A0013E1B246A0600431A18 /* LaunchScreen.xib */; };
 		B5A0015A1B246A3900431A18 /* WeatherOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A001581B246A3900431A18 /* WeatherOverlayRenderer.m */; };
 		B5A0015F1B246AE000431A18 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A0015E1B246AE000431A18 /* MapKit.framework */; };
-		B5A001611B2471B200431A18 /* WeatherViewer.gif in Resources */ = {isa = PBXBuildFile; fileRef = B5A001601B2471B100431A18 /* WeatherViewer.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B573F8361B2757B70000B708 /* WeatherOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherOverlay.h; sourceTree = "<group>"; };
 		B573F8371B2757B70000B708 /* WeatherOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherOverlay.m; sourceTree = "<group>"; };
+		B5986A5C1CA2D4AA00AE6CBD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B5A0012C1B246A0600431A18 /* WeatherViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A001301B246A0600431A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A001311B246A0600431A18 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +69,7 @@
 		B5A0012E1B246A0600431A18 /* WeatherViewer */ = {
 			isa = PBXGroup;
 			children = (
+				B5986A5C1CA2D4AA00AE6CBD /* README.md */,
 				B5A001331B246A0600431A18 /* AppDelegate.h */,
 				B5A001341B246A0600431A18 /* AppDelegate.m */,
 				B573F8361B2757B70000B708 /* WeatherOverlay.h */,
@@ -164,7 +165,6 @@
 				B5A0013B1B246A0600431A18 /* Main.storyboard in Resources */,
 				B5A001401B246A0600431A18 /* LaunchScreen.xib in Resources */,
 				B5A0013D1B246A0600431A18 /* Images.xcassets in Resources */,
-				B5A001611B2471B200431A18 /* WeatherViewer.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
