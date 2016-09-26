@@ -57,9 +57,9 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
     
-    CLLocation *location = [locations lastObject];
+    CLLocation *location = locations.lastObject;
     
-    [self.mapView setRegion:MKCoordinateRegionMake(CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), MKCoordinateSpanMake(10, 10))];
+    (self.mapView).region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), MKCoordinateSpanMake(10, 10));
     [manager stopUpdatingLocation];
     manager.delegate = nil;
     self.locationManager = nil;

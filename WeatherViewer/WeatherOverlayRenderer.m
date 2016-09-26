@@ -27,7 +27,7 @@
 
 - (NSUInteger)zoomLevelForZoomScale:(MKZoomScale)zoomScale {
     
-    CGFloat realScale = zoomScale/([[UIScreen mainScreen] scale]);
+    CGFloat realScale = zoomScale/([UIScreen mainScreen].scale);
     
     return (NSUInteger)(log(realScale)/log(2.0) + 20.0);
 }
@@ -39,13 +39,13 @@
 
 - (CGFloat)tileWidthForZoomLevel:(NSUInteger)zoomLevel {
     
-    CGFloat scale = [[UIScreen mainScreen] scale];
+    CGFloat scale = [UIScreen mainScreen].scale;
     return 1.f/(pow(2, zoomLevel)*scale);
 }
 
 - (CGRect)contentsRectForImage:(UIImage *)image mercatorPoint:(CGPoint)mercatorPoint tileX:(NSInteger)tilex tileY:(NSInteger)tiley zoomLevel:(NSUInteger)zoomLevel {
     
-    NSInteger scale = [[UIScreen mainScreen] scale];
+    NSInteger scale = [UIScreen mainScreen].scale;
     CGFloat tileWidth = [self tileWidthForZoomLevel:zoomLevel];
     CGSize imageSize = image.size;
     
@@ -88,7 +88,7 @@
     
     NSUInteger tilex = floor(mercatorPoint.x * [self worldTileWidthForZoomLevel:zoomLevel]);
     NSUInteger tiley = floor(mercatorPoint.y * [self worldTileWidthForZoomLevel:zoomLevel]);
-    NSInteger scale = [[UIScreen mainScreen] scale];
+    NSInteger scale = [UIScreen mainScreen].scale;
     
     NSURL *imageURL = [self imageURLForTileX:tilex tileY:tiley zoomLevel:zoomLevel scale:scale];
     
